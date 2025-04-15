@@ -13,11 +13,14 @@
       align-items: center;
       min-height: 100vh;
       font-family: 'Jost', sans-serif;
-      background: linear-gradient(to bottom, #dedede, #e2e0e7, #d3d3d5);
+      background: linear-gradient(to bottom, #06e161,#2ecc71);
     }
     h1{
       color: rgb(17, 14, 14);
     
+    }
+    a{
+      color: red;
     }
 
     .main {
@@ -25,8 +28,9 @@
       height: 500px;
       background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/cover;
       border-radius: 10px;
-      box-shadow: 5px 20px 50px #29a736;
+      box-shadow: 5px 20px 50px #d8dfd8;
       overflow: hidden;
+    
     }
 
     #chk {
@@ -37,13 +41,14 @@
     .login {
       position: relative;
       width: 100%;
-      height: 100%;
+      height: 150%;
     }
 
     label {
-      color: #0a0404;
-      font-size: 2.3em;
+      color: #2f10e1;
+      font-size: 1.5em;
       justify-content: center;
+      text-decoration: underline;
       display: flex;
       margin: 50px;
       font-weight: bold;
@@ -54,7 +59,7 @@
     input {
       width: 60%;
       height: 10px;
-      background: #2b990a;
+      background: #e8eae1;
       justify-content: center;
       display: flex;
       margin: 20px auto;
@@ -70,11 +75,11 @@
       margin: 10px auto;
       justify-content: center;
       display: block;
-      color: #2fa644;
-      background: #05020a;
+      color: #559b4c;
+      background: #2f16ac;
       font-size: 1em;
       font-weight: bold;
-      margin-top: 30px;
+      margin-top: 30px; 
       outline: none;
       border: none;
       border-radius: 5px;
@@ -87,20 +92,21 @@
     }
 
     .login {
-      height: 460px;
-      background: #eee;
-      border-radius: 60% / 10%;
+      height:600px;
+      background: #10bf56;
+      border-radius: 60% / 0%;
       transform: translateY(-180px);
       transition: .8s ease-in-out;
     }
 
     .login label {
-      color: #7a1af8;
+      color: #3c14ed;
+      text-decoration: underline;
       transform: scale(.6);
     }
 
     #chk:checked ~ .login {
-      transform: translateY(-500px);
+      transform: translateY(-820px);
     }
 
     #chk:checked ~ .login label {
@@ -119,7 +125,11 @@
     <div class="signup">
       <h1 align="center">Welcome</h1>
       <form>
+ 
+        <label for="chk" aria-hidden="true">already login? </label>
+
         <label for="chk" aria-hidden="true">Register</label>
+ master
         <input type="text" name="txt" placeholder="User name" required="">
         <input type="email" name="email" placeholder="Email" required="">
         <input type="number" name="broj" placeholder="Phone Number" required="">
@@ -130,10 +140,11 @@
 
     <div class="login">
       <form>
-        <label for="chk" aria-hidden="true">Login</label>
-        <input type="email" name="email" placeholder="Email" required="">
+        <label for="chk" aria-hidden="true">Sign up</label>
+        <input type="email or Contact" name="email or contact" placeholder="Email or contact" required="">
         <input type="password" name="pswd" placeholder="Password" required="">
         <button>Login</button>
+        <a href="forgot-password.html">Forgot Password?</a>
       </form>
     </div>
   </div>
